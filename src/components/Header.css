@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo_h img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .middle {
+    display: none;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+    }
+    
+    .menu {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    
+    /* Hide menu items and show only icons in mobile view */
+    @media (max-width: 767px) {
+      .menu {
+        display: none;
+      }
+    }
+  }
+  
