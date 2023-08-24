@@ -36,5 +36,33 @@
         flex-grow: 1;
       }
     }
-  
+    @media all and (min-width:768px) and (max-width:900px){
+
+ 
+        
+        .header{
+            display: flex;
+            width: 90%;
+            margin:20px auto;
+            gap:5px;
+            justify-content: space-between;
+            font-size: 12px;
+            align-items: center;
+           
+        }
+        .middle{
+            display: flex;
+            gap:10px;
+        }
+        .logo_h img{
+            width: 100px;
+            margin-right:10px;
+        }
+        .last{
+            display: flex;
+            gap:10px;
+        }
+        
+
+    }
   

@@ -35,7 +35,7 @@ input::placeholder {
     color:white;
     padding: 20px;
     display: flex;
-    gap:15px
+    gap:15px;
     
 }
 h3{
@@ -61,12 +61,18 @@ h3{
 }
 @media all and (min-width:321px) and (max-width:666px){
     .footer{
-        height: 550px;
+        height: auto;
         padding: 40px 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        margin: auto;
     }
     .main{
+        
         display:grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         width:80%;
         margin: auto;
         gap:40px;
