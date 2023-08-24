@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
+import "./Slider.css";
 
 const images = [
   { url: "https://hypefly-assets.s3.ap-south-1.amazonaws.com/media/collections/YEEZY_COLLECTION_BANNER.jpg" },
@@ -26,13 +27,13 @@ export const Slider = () => {
   }, []);
 
   // Calculate the aspect ratio of the images
-  const imageAspectRatio = 604 / 1024; // Assuming a standard width for aspect ratio calculations
+  const desiredImageHeight = 560; // Set your desired image height
 
   return (
     <div>
       <SimpleImageSlider
         width={"100%"}
-        height={sliderWidth * imageAspectRatio} // Adjust the height based on aspect ratio
+        height={sliderWidth < 1000 ? sliderWidth < 400 ? 100 : 200 : 560} // Use the desired image height
         images={images}
         showBullets={true}
         showNavs={true}
